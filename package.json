@@ -1,0 +1,26 @@
+{
+  "name": "dragg",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "sass" : "node-sass public/assets/css/style.scss public/assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rectopul/draggable.git"
+  },
+  "author": "Rogério Bonfim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rectopul/draggable/issues"
+  },
+  "homepage": "https://github.com/rectopul/draggable#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
