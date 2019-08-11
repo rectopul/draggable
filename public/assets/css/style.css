@@ -10,9 +10,11 @@
   .controles > div {
     width: 30px;
     height: 30px;
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
+    border-bottom: 5px solid #000000;
+    border-right: 5px solid #000000;
     cursor: pointer; }
+    .controles > div:hover {
+      border-color: #FEA623; }
   .controles .arr-next {
     transform: rotate(-45deg); }
   .controles .arr-prev {
