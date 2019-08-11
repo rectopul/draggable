@@ -8,17 +8,26 @@
   height: 40px;
   align-items: center; }
   .controles > div {
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #000000;
-    border-right: 5px solid #000000;
     cursor: pointer; }
-    .controles > div:hover {
-      border-color: #FEA623; }
-  .controles .arr-next {
-    transform: rotate(-45deg); }
-  .controles .arr-prev {
-    transform: rotate(135deg); }
+    .controles > div::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 0;
+      height: 0; }
+  .controles .arr-next::before {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #000000; }
+  .controles .arr-next:hover::before {
+    border-left-color: #FEA623; }
+  .controles .arr-prev::before {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #000000; }
+  .controles .arr-prev:hover::before {
+    border-right-color: #FEA623; }
 
 .drag-container {
   display: block; }

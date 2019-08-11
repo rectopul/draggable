@@ -11,27 +11,54 @@
     align-items: center;
 
     >div
-    {
-        width: 30px;
-        height: 30px;
-        border-bottom: 5px solid #000000;
-        border-right: 5px solid #000000;
+    {    
         cursor: pointer;
-
-        &:hover
+        
+        &::before
         {
-            border-color: #FEA623;
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 0; 
+            height: 0; 
         }
     }
 
     & .arr-next
     {
-        transform: rotate(-45deg);
+        &::before
+        {
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid #000000;
+
+        }
+        &:hover
+        {   
+            &::before
+            {
+                border-left-color: #FEA623;
+            }
+        }
     }
 
     & .arr-prev
     {
-        transform: rotate(135deg);
+        &::before
+        {
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent; 
+            border-right: 15px solid #000000;             
+        }
+
+        &:hover
+        {   
+            &::before
+            {
+                border-right-color: #FEA623;
+            }
+        }
     }
 }
 
