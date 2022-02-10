@@ -19,7 +19,7 @@
   "homepage": "https://github.com/rectopul/draggable#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {},
   "description": ""
